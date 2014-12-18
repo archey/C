@@ -1,4 +1,4 @@
-# Object files
+bject files
 *.o
 *.ko
 
@@ -16,3 +16,9 @@
 *.exe
 *.out
 *.app
+
+#Everything
+*
+!*.c
+!Makefile
+
