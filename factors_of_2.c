@@ -21,9 +21,9 @@ int main() {
     int factor;
     //char base[4];
 
-    printf("\nEnter an integer: ");
+    printf("Enter an integer: ");
     scanf("%d", &base); //vulnerable to buffer overflow, but need to test first replace with fgets once bad vuln is written.
-    printf("\nEnter number of times to factor: ");
+    printf("Enter number of times to factor: ");
     scanf("%d", &factor);
 
     // pass pointers of base and factor to the factor_var function
