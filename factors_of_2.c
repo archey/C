@@ -9,10 +9,11 @@
 // compile program with gcc -o factors_of_2 factors_of_2.c -lm this links the math header appropriately
 
 void factor_var(int *var, int *var2){
-    int num, result; //defined vars as ints
+    int num; // defined as a double to give more space for larger numbers
+    double result; //defined vars as ints
     for(num=1; num<=*var2; num++) {
       result = pow(*var, num); // perform integer to the power of based on base eg, 2^1 as it will loop 1-20
-      printf("%d^%d = %d \n", *var, num, result);
+      printf("%d^%d=%.lf\n", *var, num, result);
     }
 }
 
